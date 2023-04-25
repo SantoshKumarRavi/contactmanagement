@@ -6,7 +6,7 @@ import { useController, setOpenSidenav } from "../utils/Context";
 import { Bars4Icon } from "@heroicons/react/24/outline";
 const Dashboard = () => {
   const [controller, dispatch] = useController();
-  const { sidenavColor, sidenavType, openSidenav } = controller;
+  const {openSidenav } = controller;
 
   return (
     <>

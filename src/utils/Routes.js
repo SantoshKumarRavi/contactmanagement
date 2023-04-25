@@ -3,12 +3,8 @@ import {
   ClipboardDocumentIcon,
   ChartPieIcon,
 } from "@heroicons/react/24/outline";
-import Form from "../components/ContactForm";
 import ContactScreeen from "../screens/ContactScreeen";
 import Charts from "../screens/Charts";
-const icon = {
-  className: "w-5 h-5 text-inherit",
-};
 
 export const routes = [
   {

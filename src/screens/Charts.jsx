@@ -77,9 +77,6 @@ const Charts = () => {
           height={400}
           data={chartData}
           xDisplay={(dis) => {
-            let res = data[0]?.points.find((res) => {
-              return res.x == dis;
-            });
             return new Date(dis).toDateString().slice(4);
           }}
         />
@@ -134,7 +131,7 @@ const Charts = () => {
           </FeatureGroup>
         </MapContainer>
       )}
-      {countryWise.length == 0 && ( //it is for loading time with dummmy bounds
+      {countryWise.length === 0 && ( //it is for loading time with dummmy bounds
         <MapContainer
           zoom={13}
           scrollWheelZoom={false}

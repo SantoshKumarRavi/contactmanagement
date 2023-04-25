@@ -44,7 +44,7 @@ const ContactScreeen = () => {
           />
         </div>
       )}
-      {!createContact && !EditContact && contacts.length == 0 && (
+      {!createContact && !EditContact && contacts.length === 0 && (
         <div className="flex h-4/5 items-center justify-center">
           No contacts
         </div>

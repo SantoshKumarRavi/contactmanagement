@@ -19,7 +19,7 @@ const Form = ({
       setStatus(status);
       //auto fill from api data or cache state from client
     }
-  }, [edit]);
+  }, [edit,EditContactIndex,contacts]);
   function SaveContact() {
     if (!firstName || !LastName || !status) {
       return;

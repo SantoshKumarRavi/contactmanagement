@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import { Link, NavLink } from "react-router-dom";
 import { useController, setOpenSidenav, setActiveTab } from "../utils/Context";
 import { XMarkIcon } from "@heroicons/react/24/outline";
@@ -9,12 +8,8 @@ export function Sidenav({
   routes,
 }) {
   const [controller, dispatch] = useController();
-  const { sidenavColor, sidenavType, openSidenav, activeTab } = controller;
-  const sidenavTypes = {
-    dark: "bg-gradient-to-br from-blue-gray-800 to-blue-gray-900",
-    white: "bg-white shadow-lg",
-    transparent: "bg-transparent",
-  };
+  const { sidenavType, openSidenav, activeTab } = controller;
+
   return (
     <aside
       className={
@@ -37,6 +32,7 @@ export function Sidenav({
               src={
                 "https://static.vecteezy.com/system/resources/previews/008/214/517/original/abstract-geometric-logo-or-infinity-line-logo-for-your-company-free-vector.jpg"
               }
+              alt="brandIcon"
             />
           </div>
 
